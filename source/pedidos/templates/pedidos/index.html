@@ -13,7 +13,9 @@
         <div class="titulo">
             <form action="/pedidos/guardar/" method="POST">
                 {% csrf_token %}
+                <input placeholder="Ingrese su nombre" name="usuario">
                 <input placeholder="Ingrese su pedido" name="orden">
+                <input placeholder ="Dirección" name="ubicacion">
                 <input type="submit" value="Enviar">
             </form>
         </div>
